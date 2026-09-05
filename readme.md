@@ -85,14 +85,14 @@ npm install
 ### 2. Start Redis
 
 ```bash
-docker run -d --name redis-leaderboard -p 6380:6379 redis:8
+docker run -d --name redis-leaderboard -p 6379:6379 redis:8
 ```
 
 ### 3. Configure `.env`
 
 ```env
 PORT=3000
-REDIS_URL=redis://localhost:6380
+REDIS_URL=redis://localhost:6379
 ```
 
 ### 4. Start the server
